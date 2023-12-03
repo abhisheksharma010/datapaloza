@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.parent-div{
+    /* margin-top: 40px; */
+    display:  flex;
+    /* background-color: black; */
+    justify-content: space-between;
+}
+.child-div1{
+    flex: 1;
+    height: 100vh;
+    background-color: black;
+    /* color: white; */
+}
+
+.child-div2{
+    flex: 6;
+    /* background-color: red; */
+}
