@@ -19,7 +19,12 @@
   }
   
   /* Style for all buttons */
-  .nav-items button {
+  .dashboard,
+  .features,
+  .subscription,
+  .setting,
+  .logout {
+    
     width: 200px;
     font-size: 1.5rem;
     display: flex;
@@ -32,14 +37,24 @@
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    text-decoration: none;
     border-radius: 5px; /* Optional: Add rounded corners */
   }
   
-  .nav-items button:hover {
+.dashboard:hover,
+.features:hover,
+.subscription:hover,
+.setting:hover,
+.logout:hover { 
+
     background-color: gray; /* Change color on hover */
   }
   
-  .nav-items button svg {
-    margin-right: 8px;
+  .dashboard svg,
+  .features svg,
+  .subscription svg,
+  .setting svg,
+  .logout svg {
+    margin-right: 10px;
   }
   

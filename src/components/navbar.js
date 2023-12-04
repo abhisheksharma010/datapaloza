@@ -1,37 +1,37 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../componentsStyle/navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faCog, faBagShopping, faSignOutAlt } from '@fortawesome/free-solid-svg-icons'; // Import faSignOutAlt icon
+import { faHome, faCog, faBagShopping, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 import { faWandSparkles } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   return (
     <div className='nav'>
-      {/* <div className='website-logo'> Website Logo</div> */}
       <div className='nav-items'>
-        <button className='dashboard'>
+        <Link to="/" className='dashboard'>
           <FontAwesomeIcon icon={faHome} style={{ color: "#ffffff" }} />
           Dashboard
-        </button>
-        <button className='features'>
+        </Link>
+        <Link to="/features" className='features'>
           <FontAwesomeIcon icon={faWandSparkles} />
           Features
-        </button>
-        <button className='subscription'>
+        </Link>
+        <Link to="/subscription" className='subscription'>
           <FontAwesomeIcon icon={faBagShopping} />
           Subscription
-        </button>
-        <button className='setting'>
+        </Link>
+        <Link to="/setting" className='setting'>
           <FontAwesomeIcon icon={faCog} style={{ color: "#ffffff" }} />
           Setting
-        </button>
-        <button className='logout'>
+        </Link>
+        <Link to="/logout" className='logout'>
           <FontAwesomeIcon icon={faSignOutAlt} style={{ color: "#ffffff" }} />
           Logout
-        </button>
+        </Link>
       </div>
     </div>
-  )
+  );
 }
 
 export default Navbar;
